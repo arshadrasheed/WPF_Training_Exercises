@@ -1,0 +1,61 @@
+﻿<Window x:Class="_1_Layouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       Title="MainWindow" Height="700" Width="800">
+
+    <Border Padding="10">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--#region First Row Buttons -->
+            <Button Margin="2.5 " Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" Width="150" Height="150" Content="Grid Cell (0,0)"/>
+            <Button Margin="2.2" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Width="500" Height="150" Content="Grid Cell (0,1)" />
+            <Button Margin="2.5" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"  HorizontalAlignment="Right" Content="Docked on the Right"/>
+            <!--#endregion-->
+
+            <!--#region  Wrap Panel Buttons-->
+
+            <WrapPanel Margin="5,155" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top">
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="5,210,0,0" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top">
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+                <Button Margin="2.5" Content="Wrap" Width="120" Height="50"/>
+            </WrapPanel>
+
+
+            <!--#endregion-->
+
+            <!--#region Second Row Content-->
+
+            <Button Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Content="Grid Cell (1,0)" />
+
+            <!--#endregion-->
+
+        </Grid>
+
+    </Border>
+
+
+
+
+</Window>
