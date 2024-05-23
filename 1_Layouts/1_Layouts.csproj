@@ -67,8 +67,15 @@
       <DependentUpon>Layout_01.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Layout_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layout_02.xaml.cs">
+      <DependentUpon>Layout_02.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

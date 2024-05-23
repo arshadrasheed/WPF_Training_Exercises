@@ -1,0 +1,67 @@
+﻿<Window x:Class="_1_Layouts.Layout_02"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1_Layouts"
+        mc:Ignorable="d"
+        Title="Layout_02" Height="180" Width="1000">
+
+    <DockPanel>
+
+        <Button Margin="5" DockPanel.Dock="Right" Width="80" Content="Docked on the Right"/>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--#region First Row Elements-->
+
+            <Button Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Top" Width="130" Height="25" Content="Grid Cell (0,0)"/>
+            <Button Grid.Row="0" Grid.Column="1" Margin="5" VerticalAlignment="Top" Height="25" Content="Grid Cell (0,1)"/>
+
+            <WrapPanel Grid.Row="0" Grid.Column="1" Margin="5,35,0,0">
+
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+                <Button Margin="4" Content="Wrapped" Width="80" Height="30"/>
+
+            </WrapPanel>
+            
+
+            <!--#endregion-->
+
+
+            <!--#region Second Row Element-->
+
+            <Button Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Top" Height="25" Content="Grid Cell (0,1)"/>
+
+            <!--#endregion-->
+
+        </Grid>
+
+
+
+
+    </DockPanel>
+
+
+
+
+
+
+
+</Window>
